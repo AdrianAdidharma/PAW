@@ -38,9 +38,61 @@
 }
 
 .auth-card {
-    border-radius: 15px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.25);
+    color: white;
+    animation: fadeIn 0.8s ease;
+}
+
+.auth-card .form-control {
+    background: rgba(255,255,255,0.9);
     border: none;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    height: 45px;
+}
+
+.input-icon {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    color: #1e3a8a;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #1e3a8a;
+}
+
+.auth-card .btn-primary {
+    background-color: white;
+    color: #1e3a8a;
+    font-weight: 600;
+    border: none;
+    transition: 0.3s;
+}
+
+.auth-card .btn-primary:hover {
+    transform: translateY(-2px);
+    background-color: #e2e8f0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .about-image {
