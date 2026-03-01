@@ -1,22 +1,36 @@
-.page-layout {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: #f8f9fa;
+.campus-navbar {
+    background-color: #1e3a8a;
+}
+
+.campus-footer {
+    background-color: #1e3a8a;
+}
+
+.campus-hero {
+    background: linear-gradient(rgba(30,58,138,0.85), rgba(30,58,138,0.85)),
+        url('https://images.unsplash.com/photo-1567878874047-4ee47c135328?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
 }
 
 .logo {
-    height: 70px;
-    width: auto;
+    height: 50px;
 }
 
-.about-image {
-    max-height: 300px;
-    object-fit: contain;
+.campus-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-.auth-page {
-    background: linear-gradient(135deg, #0d6efd, #4dabf7);
+.campus-card:hover {
+    transform: translateY(-5px);
+}
+
+.auth-campus {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -25,8 +39,10 @@
 
 .auth-card {
     border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-footer {
-    margin-top: auto;
+.about-image {
+    max-height: 280px;
 }
